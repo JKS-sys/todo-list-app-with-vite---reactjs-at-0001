@@ -1,16 +1,87 @@
-# React + Vite
+## README.md
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+````markdown
+# To-Do List Application
 
-Currently, two official plugins are available:
+A simple and elegant To-Do List application built with React and Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- ✅ Add new tasks
+- ✅ Mark tasks as completed
+- ✅ Delete tasks
+- ✅ Edit existing tasks
+- ✅ Responsive design
+- ✅ Task statistics
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation & Setup
 
-## Expanding the ESLint configuration
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/JKS-sys/todo-list-app-with-vite---reactjs-at-0001
+   cd todo-list-app
+   ```
+````
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Header.css
+│   ├── ToDoList.jsx
+│   ├── ToDoList.css
+│   ├── ToDoItem.jsx
+│   └── ToDoItem.css
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+## Technologies Used
+
+- React 18
+- Vite
+- CSS3
+- Functional Components
+- React Hooks (useState)
+
+## Usage
+
+1. **Adding a task**: Type in the input field and click "Add Task" or press Enter
+2. **Completing a task**: Click the checkbox next to any task
+3. **Editing a task**: Click the "Edit" button, modify the text, then click "Save"
+4. **Deleting a task**: Click the "Delete" button next to any task
+
+## Commit Strategy
+
+The project includes meaningful commits:
+
+1. Initial project setup with Vite
+2. Basic component structure
+3. State management and props implementation
+4. Event handling and functionality
+5. Styling and user experience improvements
