@@ -1,0 +1,100 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: white;
+  border:2px solid #e9ecef;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.todo-item:hover{
+    border-color: #667eea
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.completed {
+    opacity: 0.7;
+    background: #f8f9fa;
+}
+
+.todo-content{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo-text{
+    font-size: 16px;
+    color:#333;
+}
+
+.todo-item.completed .todo-text{
+    text-decoration: line-through;
+    color: #6c757d;
+}
+.edit-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.todo-actions{
+    display: flex;
+    gap: 10px;
+}
+.edit-btn, .delete-btn, .save-btn, .cancel-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: white;
+}
+.edit-btn:hover:not(:disabled) {
+    background: #e0a800;
+}
+
+.edit-btn:disabled {
+    background: #ffe08a;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+.delete-btn:hover {
+    background: #c82333;
+}
+.save-btn {
+    background: #28a745;
+    color: white;
+}
+.save-btn:hover {
+    background: #218838;
+}
+.cancel-btn {
+    background: #6c757d;
+    color: white;
+}
+.cancel-btn:hover {
+    background: #5a6268;
+}

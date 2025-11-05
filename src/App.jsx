@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import ToDoList from "./components/ToDoList";
+import Header from "./components/Header";
 function App() {
   const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState("");
@@ -43,30 +44,41 @@ function App() {
 
   return (
     <div className="app">
-      < className="container">
+      <div div className="container">
+        <Header />
         <div className="input-section">
-          <input 
+          <input
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="Add a new todo"
-          className="todo-input"
+            className="todo-input"
           />
-          <button onClick={addTodo} className="add-btn">Add</button>
-          Add Task
+          <button onClick={addTodo} className="add-btn">
+            Add Task
+          </button>
         </div>
-        <ToDoList todos = {todos} onDelete={deleteTodo} onToggle={toggleTodo} onEdit={editTodo}/>
-        {todos.length>0 && (
+        <ToDoList
+          todos={todos}
+          onDelete={deleteTodo}
+          onToggle={toggleTodo}
+          onEdit={editTodo}
+        />
+        {todos.length > 0 && (
           <div className="stats">
             <p>Total Tasks: {todos.length}</p>
-            <p>Completed Tasks: {todos.filter((todo) => todo.completed).length}</p>
-            <p>Pending Tasks: {todos.filter((todo) => !todo.completed).length}</p>
+            <p>
+              Completed Tasks: {todos.filter((todo) => todo.completed).length}
+            </p>
+            <p>
+              Pending Tasks: {todos.filter((todo) => !todo.completed).length}
+            </p>
           </div>
         )}
-        
       </div>
-  )
+    </div>
+  );
 }
 
 export default App;

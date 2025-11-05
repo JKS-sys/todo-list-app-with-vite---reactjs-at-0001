@@ -18,9 +18,9 @@ const ToDoItem = ({ todo, onDelete, onToggle, onEdit }) => {
     }
   };
 
-  const handleCancel = (e) => {
+  const handleCancel = () => {
     setEditText(todo.text);
-    setIsEditing(flase);
+    setIsEditing(false);
   };
   return (
     <div className={`todo-item ${todo.completed ? "completed" : ""}`}>
