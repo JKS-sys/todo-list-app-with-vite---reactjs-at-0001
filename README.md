@@ -1,6 +1,5 @@
 ## README.md
 
-````markdown
 # To-Do List Application
 
 A simple and elegant To-Do List application built with React and Vite.
@@ -91,4 +90,3 @@ The project includes meaningful commits:
 3. State management and props implementation
 4. Event handling and functionality
 5. Styling and user experience improvements
-````
