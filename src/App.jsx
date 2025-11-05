@@ -77,6 +77,9 @@ function App() {
           </div>
         )}
       </div>
+      <div className="footer">
+        <p>© 2025 My To-Do List App. All rights reserved.</p>
+      </div>
     </div>
   );
 }

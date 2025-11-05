@@ -63,3 +63,10 @@
 .stats p {
   margin: 0;
 }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #adb5bd;
+}

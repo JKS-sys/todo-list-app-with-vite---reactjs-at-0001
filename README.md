@@ -1,5 +1,3 @@
-## README.md
-
 # To-Do List Application
 
 A simple and elegant To-Do List application built with React and Vite.
