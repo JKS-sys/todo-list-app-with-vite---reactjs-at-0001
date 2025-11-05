@@ -14,14 +14,20 @@ A simple and elegant To-Do List application built with React and Vite.
 - ✅ Responsive design
 - ✅ Task statistics
 
+## Deployed URL
+
+```bash
+https://todo-list-app-with-vite-reactjs-at.vercel.app
+```
+
 ## Installation & Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/JKS-sys/todo-list-app-with-vite---reactjs-at-0001
    cd todo-list-app
    ```
-````
 
 2. **Install dependencies**
 
@@ -85,3 +91,4 @@ The project includes meaningful commits:
 3. State management and props implementation
 4. Event handling and functionality
 5. Styling and user experience improvements
+````
